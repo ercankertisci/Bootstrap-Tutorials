@@ -1,0 +1,60 @@
+<!--
+    Offcanvas modallara benzer (varsayılan olarak gizlidir ve etkinleştirildiğinde gösterilir)
+
+    Bunun dışında genellikle bir kenar çubuğu gezinme menüsü olarak kullanılır.
+
+
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+<div class="offcanvas offcanvas-start" id="demo">
+  <div class="offcanvas-header">
+    <h1 class="offcanvas-title">Heading</h1>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+  </div>
+  <div class="offcanvas-body">
+    <p>Some text lorem ipsum.</p>
+    <p>Some text lorem ipsum.</p>
+    <p>Some text lorem ipsum.</p>
+    <button class="btn btn-secondary" type="button">A Button</button>
+  </div>
+</div>
+
+<div class="container-fluid mt-3">
+  <h3>Offcanvas Sidebar</h3>
+  <p>Offcanvas is similar to modals, except that it is often used as a sidebar.</p>
+  <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+    Open Offcanvas Sidebar
+  </button>
+</div>
+
+</body>
+</html>
+
+
+<!--
+    Açıklama
+
+    .offcanvas sınıfı, offcanvas kenar çubuğunu oluşturur.
+
+.offcanvas-start sınıfı, offcanvas'ı konumlandırır ve 400 piksel genişliğinde yapar. Daha fazla konumlandırma sınıfı için aşağıdaki örneklere bakın.
+
+.offcanvas-title sınıfı, uygun kenar boşlukları ve satır yüksekliği sağlar.
+
+Ardından, içeriğinizi .offcanvas-body sınıfının içine ekleyin.
+
+offcanvas kenar çubuğunu açmak için, .offcanvas kapsayıcısının kimliğine işaret eden bir <button> veya bir <a> öğesi kullanmalısınız (bizim örneğimizde demo).
+
+Offcanvas kenar çubuğunu bir <a> öğesiyle açmak için data-bs-target niteliği yerine href niteliğiyle #demo'ya işaret edebilirsiniz.
+-->
