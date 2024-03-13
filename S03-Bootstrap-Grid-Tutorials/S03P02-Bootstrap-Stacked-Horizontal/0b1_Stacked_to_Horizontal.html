@@ -1,0 +1,45 @@
+<!--
+
+
+    Izgara Örneği: Yatay olarak yığınlanmış
+Daha büyük cihazlarda yatay hale gelmeden önce, çok küçük cihazlarda yığın halinde başlayan temel bir ızgara sistemi oluşturalım.
+
+Aşağıdaki örnek, basit bir "yığılmış-yatay" iki sütunlu düzeni göstermektedir; bu, otomatik olarak yığınlayacağı (%100) ekstra küçük ekranlar dışında tüm ekranlarda %50/%50'lik bir bölünmeyle sonuçlanacağı anlamına gelir:
+
+
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+<div class="container-fluid mt-3">
+  <h1>Grid Example</h1>
+  <p>This example demonstrates a 50%/50% split on small, medium, large, xlarge and xxlarge devices. On extra small devices, it will stack (100% width).</p>      
+  <p>Resize the browser window to see the effect.</p> 
+  <div class="row">
+    <div class="col-sm-6 bg-primary text-white p-3">
+      Lorem ipsum...
+    </div>
+    <div class="col-sm-6 bg-dark text-white p-3">
+      Sed ut perspiciatis...
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
+
+<!--
+    İpucu: .col-sm-* sınıflarındaki sayılar, div'in (12 üzerinden) kaç sütuna yayılması gerektiğini gösterir. Böylece, .col-sm-1 1 sütunu, .col-sm-4 4 sütunu, .col-sm-6 6 sütunu kapsar, vb.
+
+Not: Toplamın 12 veya daha az olduğundan emin olun (mevcut 12 sütunun tümünü kullanmanız gerekli değildir):
+-->
